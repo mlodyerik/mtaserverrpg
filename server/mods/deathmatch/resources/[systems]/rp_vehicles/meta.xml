@@ -1,0 +1,17 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_vehicles" version="1.0.0"
+          description="Własność pojazdów, spawn, paliwo, silnik, światła, zamki, pasy, przebieg"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <include resource="rp_notifications"/>
+    <script src="shared/vehicle_data.lua"   type="shared"/>
+    <script src="server/vehicles_sv.lua"    type="server"/>
+    <script src="client/vehicles_cl.lua"    type="client"/>
+    <export function="spawnPlayerVehicle"   type="server"/>
+    <export function="storePlayerVehicle"   type="server"/>
+    <export function="getVehicleData"       type="server"/>
+    <export function="setVehicleFuel"       type="server"/>
+    <export function="addMileage"           type="server"/>
+</meta>

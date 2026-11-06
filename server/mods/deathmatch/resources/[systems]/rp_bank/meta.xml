@@ -1,0 +1,9 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_bank" version="1.0.0"
+          description="Bankomaty, przelewy, historia transakcji"/>
+    <include resource="rp_core"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <script src="server/bank_sv.lua"  type="server"/>
+    <script src="client/bank_cl.lua"  type="client"/>
+</meta>

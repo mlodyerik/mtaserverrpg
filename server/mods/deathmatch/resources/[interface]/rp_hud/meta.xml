@@ -1,0 +1,6 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_hud" version="1.0.0"
+          description="Główny HUD: pieniądze, HP, głód, pragnienie, czas, poziom"/>
+    <include resource="rp_core"/>
+    <script src="client/hud.lua" type="client"/>
+</meta>

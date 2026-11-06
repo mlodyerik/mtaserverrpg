@@ -1,0 +1,5 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_notifications" version="1.0.0"
+          description="System powiadomień DX (toast messages)"/>
+    <script src="client/notifications.lua" type="client"/>
+</meta>

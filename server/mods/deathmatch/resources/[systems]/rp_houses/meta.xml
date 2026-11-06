@@ -1,0 +1,10 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_houses" version="1.0.0"
+          description="Nieruchomości: kupno, sprzedaż, interiory, schowek"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <script src="server/houses_sv.lua" type="server"/>
+    <script src="client/houses_cl.lua" type="client"/>
+</meta>

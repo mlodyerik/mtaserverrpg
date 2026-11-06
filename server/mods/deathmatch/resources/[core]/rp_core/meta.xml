@@ -1,0 +1,17 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_core" version="1.0.0"
+          description="Wspólne narzędzia, stałe, walidacja, rate-limit, konfiguracja"/>
+    <script src="shared/constants.lua" type="shared"/>
+    <script src="shared/utils.lua"     type="shared"/>
+    <script src="server/config.lua"    type="server"/>
+    <script src="server/ratelimit.lua" type="server"/>
+    <script src="server/core_server.lua" type="server"/>
+    <export function="getConfig"       type="server"/>
+    <export function="isValidName"     type="server"/>
+    <export function="isValidAmount"   type="server"/>
+    <export function="rateLimitCheck"  type="server"/>
+    <export function="colorToHex"      type="shared"/>
+    <export function="formatMoney"     type="shared"/>
+    <export function="clamp"           type="shared"/>
+    <export function="tableContains"   type="shared"/>
+</meta>

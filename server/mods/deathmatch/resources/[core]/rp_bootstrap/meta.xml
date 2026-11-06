@@ -1,0 +1,5 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_bootstrap" version="1.0.0"
+          description="Start sequencer – uruchamia zasoby w prawidłowej kolejności"/>
+    <script src="server/bootstrap.lua" type="server"/>
+</meta>

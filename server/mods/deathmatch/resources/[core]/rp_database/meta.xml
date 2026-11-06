@@ -1,0 +1,12 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_database" version="1.0.0"
+          description="Połączenie z bazą danych. Jedyny zasób używający dbConnect."/>
+    <include resource="rp_core"/>
+    <script src="server/database.lua" type="server"/>
+    <export function="dbQuery"    type="server"/>
+    <export function="dbExecute"  type="server"/>
+    <export function="dbGetRow"   type="server"/>
+    <export function="dbGetAll"   type="server"/>
+    <export function="dbEscape"   type="server"/>
+    <export function="getDB"      type="server"/>
+</meta>

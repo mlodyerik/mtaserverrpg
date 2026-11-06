@@ -1,0 +1,16 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_jobs" version="1.0.0"
+          description="System prac: kurier, taxi, bus, truck, kosiarz, nurek, śmieciarz, magazynier, rybak"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <include resource="rp_vehicles"/>
+    <include resource="rp_notifications"/>
+    <script src="shared/jobs_data.lua"   type="shared"/>
+    <script src="server/jobs_sv.lua"     type="server"/>
+    <script src="client/jobs_cl.lua"     type="client"/>
+    <export function="startJob"   type="server"/>
+    <export function="stopJob"    type="server"/>
+    <export function="getJobName" type="server"/>
+</meta>

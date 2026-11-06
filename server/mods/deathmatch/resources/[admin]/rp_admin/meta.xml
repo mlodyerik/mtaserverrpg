@@ -1,0 +1,11 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_admin" version="1.0.0"
+          description="Panel administracyjny: kick, ban, teleport, cash, level, spawn"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <include resource="rp_logs"/>
+    <script src="server/admin_sv.lua" type="server"/>
+    <script src="client/admin_cl.lua" type="client"/>
+</meta>

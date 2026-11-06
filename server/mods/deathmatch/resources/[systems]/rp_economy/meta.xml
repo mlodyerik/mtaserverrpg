@@ -1,0 +1,20 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_economy" version="1.0.0"
+          description="Jedyny zasób zarządzający pieniędzmi. Gotówka, bank, transakcje."/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_logs"/>
+    <include resource="rp_characters"/>
+    <script src="server/economy.lua" type="server"/>
+    <export function="giveCash"         type="server"/>
+    <export function="takeCash"         type="server"/>
+    <export function="giveBank"         type="server"/>
+    <export function="takeBank"         type="server"/>
+    <export function="getCash"          type="server"/>
+    <export function="getBank"          type="server"/>
+    <export function="transferCash"     type="server"/>
+    <export function="cashToBank"       type="server"/>
+    <export function="bankToCash"       type="server"/>
+    <export function="logTransaction"   type="server"/>
+    <export function="getTransactions"  type="server"/>
+</meta>

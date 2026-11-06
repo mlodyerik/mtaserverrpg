@@ -1,0 +1,12 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_accounts" version="1.0.0"
+          description="Rejestracja, logowanie, sesje graczy"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_logs"/>
+    <script src="server/accounts.lua" type="server"/>
+    <script src="client/login_ui.lua"  type="client"/>
+    <export function="getAccount"    type="server"/>
+    <export function="isLoggedIn"    type="server"/>
+    <export function="getAccountId"  type="server"/>
+</meta>

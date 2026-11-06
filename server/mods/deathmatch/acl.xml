@@ -1,0 +1,101 @@
+<acl>
+    <!-- Grupy ACL -->
+    <group name="Default">
+        <acl name="Default"/>
+        <object name="user.*"/>
+    </group>
+    <group name="Admin">
+        <acl name="Admin"/>
+        <acl name="Default"/>
+        <object name="user.Admin"/>
+    </group>
+    <group name="SuperAdmin">
+        <acl name="SuperAdmin"/>
+        <acl name="Admin"/>
+        <object name="user.SuperAdmin"/>
+    </group>
+    <group name="Console">
+        <acl name="ConsoleAccess"/>
+        <object name="user.Console"/>
+    </group>
+    <group name="Everything">
+        <acl name="Everything"/>
+        <object name="resource.*"/>
+    </group>
+
+    <!-- ACL: Default - podstawowe uprawnienia gracza -->
+    <acl name="Default">
+        <right name="function.startResource" access="false"/>
+        <right name="function.stopResource" access="false"/>
+        <right name="function.setServerPassword" access="false"/>
+        <right name="function.kickPlayer" access="false"/>
+        <right name="function.banPlayer" access="false"/>
+        <right name="function.addBan" access="false"/>
+        <right name="function.removeBan" access="false"/>
+        <right name="function.setPlayerMoney" access="false"/>
+        <right name="function.givePlayerMoney" access="false"/>
+        <right name="function.takePlayerMoney" access="false"/>
+        <right name="function.spawnVehicle" access="false"/>
+        <right name="function.createVehicle" access="false"/>
+        <right name="function.setVehiclePlateText" access="false"/>
+        <right name="function.executeSQLQuery" access="false"/>
+        <right name="general.adminpanel" access="false"/>
+        <right name="command.say" access="true"/>
+        <right name="command.me" access="true"/>
+        <right name="command.stats" access="true"/>
+    </acl>
+
+    <!-- ACL: Admin -->
+    <acl name="Admin">
+        <right name="general.adminpanel" access="true"/>
+        <right name="command.kick" access="true"/>
+        <right name="command.ban" access="true"/>
+        <right name="command.mute" access="true"/>
+        <right name="command.tp" access="true"/>
+        <right name="command.setcash" access="true"/>
+        <right name="command.setlevel" access="true"/>
+        <right name="command.spawnveh" access="true"/>
+        <right name="command.giveveh" access="true"/>
+        <right name="command.repair" access="true"/>
+        <right name="command.freeze" access="true"/>
+        <right name="command.unfreeze" access="true"/>
+        <right name="command.noclip" access="true"/>
+        <right name="command.anim" access="true"/>
+        <right name="command.setskin" access="true"/>
+        <right name="command.announce" access="true"/>
+    </acl>
+
+    <!-- ACL: SuperAdmin -->
+    <acl name="SuperAdmin">
+        <right name="function.startResource" access="true"/>
+        <right name="function.stopResource" access="true"/>
+        <right name="function.restartResource" access="true"/>
+        <right name="function.setServerPassword" access="true"/>
+        <right name="general.adminpanel" access="true"/>
+        <right name="command.startres" access="true"/>
+        <right name="command.stopres" access="true"/>
+        <right name="command.reloadres" access="true"/>
+        <right name="command.unban" access="true"/>
+        <right name="command.setadmin" access="true"/>
+        <right name="command.removeadmin" access="true"/>
+    </acl>
+
+    <!-- ACL: ConsoleAccess -->
+    <acl name="ConsoleAccess">
+        <right name="function.startResource" access="true"/>
+        <right name="function.stopResource" access="true"/>
+        <right name="function.restartResource" access="true"/>
+        <right name="function.setServerPassword" access="true"/>
+        <right name="function.kickPlayer" access="true"/>
+        <right name="function.banPlayer" access="true"/>
+        <right name="general.adminpanel" access="true"/>
+    </acl>
+
+    <!-- ACL: Everything (zasoby systemowe) -->
+    <acl name="Everything">
+        <right name="general.*" access="true"/>
+        <right name="function.*" access="true"/>
+        <right name="resource.*" access="true"/>
+        <right name="command.*" access="true"/>
+    </acl>
+</acl>

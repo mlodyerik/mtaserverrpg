@@ -1,0 +1,14 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_factions" version="1.0.0"
+          description="System frakcji: duty, rangi, chat, uprawnienia"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <script src="server/factions_sv.lua" type="server"/>
+    <script src="client/factions_cl.lua" type="client"/>
+    <export function="isInFraction"   type="server"/>
+    <export function="getFractionId"  type="server"/>
+    <export function="isOnDuty"       type="server"/>
+    <export function="getRank"        type="server"/>
+</meta>

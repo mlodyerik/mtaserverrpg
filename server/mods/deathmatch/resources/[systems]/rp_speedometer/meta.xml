@@ -1,0 +1,12 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_speedometer" version="1.0.0"
+          description="Prędkościomierz inspirowany stylem 4Life: dark bottom-bar, kolor po lewej, kmh, bieg, paliwo"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_characters"/>
+    <script src="server/speedometer_sv.lua" type="server"/>
+    <script src="client/speedometer.lua"    type="client"/>
+    <export function="buySpeedometer"       type="server"/>
+    <export function="setSpeedometerColor"  type="server"/>
+</meta>

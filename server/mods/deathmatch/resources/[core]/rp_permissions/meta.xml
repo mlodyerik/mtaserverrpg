@@ -1,0 +1,10 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_permissions" version="1.0.0"
+          description="Uprawnienia w grze (niezależne od ACL)"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_accounts"/>
+    <script src="server/permissions.lua" type="server"/>
+    <export function="hasPermission"  type="server"/>
+    <export function="grantPermission" type="server"/>
+</meta>

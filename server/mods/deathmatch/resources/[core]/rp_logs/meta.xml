@@ -1,0 +1,10 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_logs" version="1.0.0"
+          description="Logi techniczne i audytowe"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <script src="server/logs.lua" type="server"/>
+    <export function="logAdmin"   type="server"/>
+    <export function="logSystem"  type="server"/>
+    <export function="logChat"    type="server"/>
+</meta>

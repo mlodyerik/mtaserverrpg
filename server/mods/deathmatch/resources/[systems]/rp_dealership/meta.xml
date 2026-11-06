@@ -1,0 +1,11 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_dealership" version="1.0.0"
+          description="Salon samochodowy w San Fierro i innych miastach"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_vehicles"/>
+    <include resource="rp_characters"/>
+    <script src="server/dealership_sv.lua"  type="server"/>
+    <script src="client/dealership_cl.lua"  type="client"/>
+</meta>

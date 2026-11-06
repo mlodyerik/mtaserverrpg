@@ -1,0 +1,11 @@
+<meta>
+    <info author="SA-RPG" type="script" name="rp_garages" version="1.0.0"
+          description="Garaże: przechowywanie i wywoływanie pojazdów"/>
+    <include resource="rp_core"/>
+    <include resource="rp_database"/>
+    <include resource="rp_economy"/>
+    <include resource="rp_vehicles"/>
+    <include resource="rp_characters"/>
+    <script src="server/garages_sv.lua" type="server"/>
+    <script src="client/garages_cl.lua" type="client"/>
+</meta>
